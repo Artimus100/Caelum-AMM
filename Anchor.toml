@@ -4,7 +4,7 @@
 seeds = false
 skip-lint = true
 
-[programs.localnet]
+[programs.devnet]
 caelum_amm = "7uTEXZNdMUkjBmN5LvhN7iZ56WsgoW5PjTDBgGvqiFMT"
 nft-conversion = "HQMM3aYxwgV7wtNwWzx34ALb7psP4NRsygp7eZ7hoABv"
 
@@ -12,7 +12,7 @@ nft-conversion = "HQMM3aYxwgV7wtNwWzx34ALb7psP4NRsygp7eZ7hoABv"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "Devnet"
 wallet = "/Users/artimus100/.config/solana/id.json"
 
 [scripts]
