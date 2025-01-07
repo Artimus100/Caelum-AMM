@@ -1,12 +1,12 @@
 [package]
-name = "caelum-amm"
+name = "nft-conversion"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "caelum_amm"
+name = "nft_conversion"
 
 [features]
 default = []
@@ -16,7 +16,6 @@ no-idl = []
 no-log-ix-name = []
 idl-build = [
     "anchor-lang/idl-build",
-  
 ]
 [dependencies]
 anchor-lang = "0.30.1"

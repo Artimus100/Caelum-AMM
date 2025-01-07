@@ -15,7 +15,15 @@ declare_id!("7uTEXZNdMUkjBmN5LvhN7iZ56WsgoW5PjTDBgGvqiFMT");
 pub mod caelum_amm {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        initialize::handler(ctx)
+    pub fn initialize(ctx: Context<Initialize>, params: InitializeParams) -> Result<()> {
+        instructions::initialize::handler(ctx, params)
+    }
+
+    pub fn mint(ctx: Context<Mint>, amount: u64) -> Result<()> {
+        instructions::mint::handler(ctx, amount)
+    }
+
+    pub fn update(ctx: Context<Update>, params: UpdateParams) -> Result<()> {
+        instructions::update::handler(ctx, params)
     }
 }
